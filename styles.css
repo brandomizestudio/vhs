@@ -486,22 +486,92 @@ img {
         right: 0;
     }
 
+    .section {
+        padding: 50px 0; /* Reduced padding for mobile */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Smaller title size */
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller hero title */
+    }
+    
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .hero-desc {
+        font-size: 0.95rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .about-grid,
     .principal-wrapper,
     .contact-wrapper {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .principal-img {
         flex: auto;
         width: 100%;
     }
+    
+    .principal-img .img-placeholder {
+        height: 250px; /* Smaller image height for mobile */
+    }
+    
+    .img-placeholder {
+        height: 200px; /* General smaller image height */
+    }
+    
+    .facility-item .img-placeholder {
+        height: 180px;
+    }
 
-    .section {
-        padding: 50px 0;
+    .glass-card {
+        padding: 20px; /* Smaller card padding */
+    }
+    
+    .feature-card .icon {
+        font-size: 2.5rem;
+    }
+    
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .container {
+        padding: 0 15px;
     }
 }
