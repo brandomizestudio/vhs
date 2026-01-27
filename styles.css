@@ -693,16 +693,22 @@ img {
     }
 
     .section {
-        padding: 60px 0;
+        padding: 60px 20px;
     }
 
     .section-title {
         font-size: 2rem;
+        padding-bottom: 15px;
     }
     
     .section-subtitle {
         font-size: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 100px 20px 60px;
     }
 
     .hero h1 {
@@ -715,36 +721,49 @@ img {
     
     .hero-desc {
         font-size: 1rem;
+        padding: 0 10px;
     }
     
     .hero-btns {
         flex-direction: column;
         gap: 15px;
+        padding: 0 10px;
     }
     
     .btn {
         width: 100%;
+        max-width: 100%;
         text-align: center;
+        padding: 12px 25px;
+        font-size: 0.85rem;
     }
 
     .about-grid,
     .principal-wrapper,
     .contact-wrapper {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 30px;
+    }
+
+    .principal-wrapper {
+        flex-direction: column;
     }
 
     .principal-img {
-        flex: auto;
+        flex: none;
         width: 100%;
+        max-width: 100%;
     }
     
     .principal-img .img-placeholder {
-        height: 280px;
+        width: 100%;
+        height: 300px;
+        max-height: 300px;
     }
     
     .img-placeholder {
-        height: 220px;
+        width: 100%;
+        height: 250px;
     }
     
     .facility-item .img-placeholder {
@@ -752,19 +771,49 @@ img {
     }
 
     .glass-card {
-        padding: 25px;
+        padding: 20px;
     }
     
     .feature-card .icon {
         font-size: 3rem;
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .facilities-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
     
     .footer {
-        padding: 50px 0 25px;
+        padding: 50px 20px 25px;
     }
     
     .footer-content {
         gap: 35px;
+        grid-template-columns: 1fr;
+    }
+
+    .local-trust-content {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .principal-text blockquote {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    .academic-list li {
+        font-size: 0.95rem;
+        padding-left: 30px;
+    }
+
+    .contact-item {
+        margin-bottom: 20px;
     }
 }
 
@@ -783,5 +832,31 @@ img {
     
     .logo a {
         font-size: 1.3rem;
+    }
+
+    .section {
+        padding: 50px 15px;
+    }
+
+    .glass-card {
+        padding: 18px;
+    }
+
+    .btn {
+        padding: 11px 20px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .principal-img .img-placeholder {
+        height: 280px;
+    }
+
+    .img-placeholder {
+        height: 220px;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
     }
 }
